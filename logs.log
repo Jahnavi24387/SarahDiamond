@@ -1,0 +1,512 @@
+2023-08-15 19:15:53,601:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:15:53,601:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:15:53,601:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:15:53,601:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:17:01,363:INFO:PyCaret RegressionExperiment
+2023-08-15 19:17:01,363:INFO:Logging name: reg-default-name
+2023-08-15 19:17:01,363:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-08-15 19:17:01,364:INFO:version 3.0.4
+2023-08-15 19:17:01,364:INFO:Initializing setup()
+2023-08-15 19:17:01,364:INFO:self.USI: 5b02
+2023-08-15 19:17:01,364:INFO:self._variable_keys: {'_available_plots', '_ml_usecase', 'exp_id', 'exp_name_log', 'target_param', 'fold_groups_param', 'n_jobs_param', 'pipeline', 'X_test', 'gpu_param', 'y_train', 'seed', 'X_train', 'log_plots_param', 'logging_param', 'fold_shuffle_param', 'gpu_n_jobs_param', 'memory', 'USI', 'fold_generator', 'idx', 'transform_target_param', 'y', 'X', 'data', 'y_test', 'html_param'}
+2023-08-15 19:17:01,365:INFO:Checking environment
+2023-08-15 19:17:01,365:INFO:python_version: 3.9.13
+2023-08-15 19:17:01,365:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-08-15 19:17:01,365:INFO:machine: AMD64
+2023-08-15 19:17:01,365:INFO:platform: Windows-10-10.0.19045-SP0
+2023-08-15 19:17:01,371:INFO:Memory: svmem(total=8476581888, available=1296830464, percent=84.7, used=7179751424, free=1296830464)
+2023-08-15 19:17:01,372:INFO:Physical Core: 2
+2023-08-15 19:17:01,373:INFO:Logical Core: 4
+2023-08-15 19:17:01,374:INFO:Checking libraries
+2023-08-15 19:17:01,374:INFO:System:
+2023-08-15 19:17:01,374:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-08-15 19:17:01,374:INFO:executable: E:\pycaret-mlops-master\pycaret-mlops-master\venv\Scripts\python.exe
+2023-08-15 19:17:01,374:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-08-15 19:17:01,374:INFO:PyCaret required dependencies:
+2023-08-15 19:17:04,844:INFO:                 pip: 22.3.1
+2023-08-15 19:17:04,844:INFO:          setuptools: 65.5.1
+2023-08-15 19:17:04,844:INFO:             pycaret: 3.0.4
+2023-08-15 19:17:04,844:INFO:             IPython: 7.34.0
+2023-08-15 19:17:04,844:INFO:          ipywidgets: 7.8.0
+2023-08-15 19:17:04,844:INFO:                tqdm: 4.66.1
+2023-08-15 19:17:04,845:INFO:               numpy: 1.23.5
+2023-08-15 19:17:04,845:INFO:              pandas: 1.5.3
+2023-08-15 19:17:04,845:INFO:              jinja2: 3.1.2
+2023-08-15 19:17:04,845:INFO:               scipy: 1.10.1
+2023-08-15 19:17:04,845:INFO:              joblib: 1.3.2
+2023-08-15 19:17:04,845:INFO:             sklearn: 1.2.2
+2023-08-15 19:17:04,845:INFO:                pyod: 1.1.0
+2023-08-15 19:17:04,845:INFO:            imblearn: 0.11.0
+2023-08-15 19:17:04,845:INFO:   category_encoders: 2.6.1
+2023-08-15 19:17:04,845:INFO:            lightgbm: 4.0.0
+2023-08-15 19:17:04,846:INFO:               numba: 0.57.1
+2023-08-15 19:17:04,846:INFO:            requests: 2.31.0
+2023-08-15 19:17:04,846:INFO:          matplotlib: 3.7.2
+2023-08-15 19:17:04,846:INFO:          scikitplot: 0.3.7
+2023-08-15 19:17:04,846:INFO:         yellowbrick: 1.5
+2023-08-15 19:17:04,846:INFO:              plotly: 5.16.0
+2023-08-15 19:17:04,846:INFO:    plotly-resampler: Not installed
+2023-08-15 19:17:04,846:INFO:             kaleido: 0.2.1
+2023-08-15 19:17:04,846:INFO:           schemdraw: 0.15
+2023-08-15 19:17:04,846:INFO:         statsmodels: 0.14.0
+2023-08-15 19:17:04,847:INFO:              sktime: 0.21.0
+2023-08-15 19:17:04,847:INFO:               tbats: 1.1.3
+2023-08-15 19:17:04,847:INFO:            pmdarima: 2.0.3
+2023-08-15 19:17:04,847:INFO:              psutil: 5.9.5
+2023-08-15 19:17:04,847:INFO:          markupsafe: 2.1.3
+2023-08-15 19:17:04,847:INFO:             pickle5: Not installed
+2023-08-15 19:17:04,847:INFO:         cloudpickle: 2.2.1
+2023-08-15 19:17:04,847:INFO:         deprecation: 2.1.0
+2023-08-15 19:17:04,847:INFO:              xxhash: 3.3.0
+2023-08-15 19:17:04,847:INFO:           wurlitzer: Not installed
+2023-08-15 19:17:04,848:INFO:PyCaret optional dependencies:
+2023-08-15 19:17:05,404:WARNING:E:\pycaret-mlops-master\pycaret-mlops-master\venv\lib\site-packages\trio\_core\_multierror.py:412: RuntimeWarning:
+
+IPython detected, but you already have a custom exception handler installed. I'll skip installing Trio's custom handler, but this means exception groups will not show full tracebacks.
+
+
+2023-08-15 19:19:32,611:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:19:32,611:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:19:32,612:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:19:32,612:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:19:36,326:INFO:PyCaret ClassificationExperiment
+2023-08-15 19:19:36,327:INFO:Logging name: clf-default-name
+2023-08-15 19:19:36,327:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-08-15 19:19:36,327:INFO:version 3.0.4
+2023-08-15 19:19:36,327:INFO:Initializing setup()
+2023-08-15 19:19:36,327:INFO:self.USI: 793a
+2023-08-15 19:19:36,327:INFO:self._variable_keys: {'X_train', 'logging_param', 'memory', 'target_param', 'y_train', 'exp_name_log', 'fold_groups_param', 'html_param', 'n_jobs_param', 'y', 'gpu_param', 'seed', 'X_test', 'X', 'pipeline', 'idx', 'y_test', 'fix_imbalance', 'log_plots_param', 'exp_id', 'fold_generator', 'is_multiclass', '_available_plots', 'gpu_n_jobs_param', 'USI', '_ml_usecase', 'data', 'fold_shuffle_param'}
+2023-08-15 19:19:36,327:INFO:Checking environment
+2023-08-15 19:19:36,327:INFO:python_version: 3.9.13
+2023-08-15 19:19:36,328:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-08-15 19:19:36,328:INFO:machine: AMD64
+2023-08-15 19:19:36,328:INFO:platform: Windows-10-10.0.19045-SP0
+2023-08-15 19:19:36,335:INFO:Memory: svmem(total=8476581888, available=538750976, percent=93.6, used=7937830912, free=538750976)
+2023-08-15 19:19:36,335:INFO:Physical Core: 2
+2023-08-15 19:19:36,336:INFO:Logical Core: 4
+2023-08-15 19:19:36,336:INFO:Checking libraries
+2023-08-15 19:19:36,336:INFO:System:
+2023-08-15 19:19:36,336:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-08-15 19:19:36,336:INFO:executable: E:\pycaret-mlops-master\pycaret-mlops-master\venv\Scripts\python.exe
+2023-08-15 19:19:36,336:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-08-15 19:19:36,336:INFO:PyCaret required dependencies:
+2023-08-15 19:19:41,102:INFO:                 pip: 22.3.1
+2023-08-15 19:19:41,102:INFO:          setuptools: 65.5.1
+2023-08-15 19:19:41,102:INFO:             pycaret: 3.0.4
+2023-08-15 19:19:41,102:INFO:             IPython: 7.34.0
+2023-08-15 19:19:41,103:INFO:          ipywidgets: 7.8.0
+2023-08-15 19:19:41,103:INFO:                tqdm: 4.66.1
+2023-08-15 19:19:41,103:INFO:               numpy: 1.23.5
+2023-08-15 19:19:41,103:INFO:              pandas: 1.5.3
+2023-08-15 19:19:41,103:INFO:              jinja2: 3.1.2
+2023-08-15 19:19:41,103:INFO:               scipy: 1.10.1
+2023-08-15 19:19:41,103:INFO:              joblib: 1.3.2
+2023-08-15 19:19:41,103:INFO:             sklearn: 1.2.2
+2023-08-15 19:19:41,103:INFO:                pyod: 1.1.0
+2023-08-15 19:19:41,103:INFO:            imblearn: 0.11.0
+2023-08-15 19:19:41,103:INFO:   category_encoders: 2.6.1
+2023-08-15 19:19:41,103:INFO:            lightgbm: 4.0.0
+2023-08-15 19:19:41,103:INFO:               numba: 0.57.1
+2023-08-15 19:19:41,104:INFO:            requests: 2.31.0
+2023-08-15 19:19:41,104:INFO:          matplotlib: 3.7.2
+2023-08-15 19:19:41,104:INFO:          scikitplot: 0.3.7
+2023-08-15 19:19:41,104:INFO:         yellowbrick: 1.5
+2023-08-15 19:19:41,104:INFO:              plotly: 5.16.0
+2023-08-15 19:19:41,104:INFO:    plotly-resampler: Not installed
+2023-08-15 19:19:41,104:INFO:             kaleido: 0.2.1
+2023-08-15 19:19:41,104:INFO:           schemdraw: 0.15
+2023-08-15 19:19:41,104:INFO:         statsmodels: 0.14.0
+2023-08-15 19:19:41,104:INFO:              sktime: 0.21.0
+2023-08-15 19:19:41,104:INFO:               tbats: 1.1.3
+2023-08-15 19:19:41,104:INFO:            pmdarima: 2.0.3
+2023-08-15 19:19:41,104:INFO:              psutil: 5.9.5
+2023-08-15 19:19:41,104:INFO:          markupsafe: 2.1.3
+2023-08-15 19:19:41,104:INFO:             pickle5: Not installed
+2023-08-15 19:19:41,105:INFO:         cloudpickle: 2.2.1
+2023-08-15 19:19:41,105:INFO:         deprecation: 2.1.0
+2023-08-15 19:19:41,105:INFO:              xxhash: 3.3.0
+2023-08-15 19:19:41,105:INFO:           wurlitzer: Not installed
+2023-08-15 19:19:41,105:INFO:PyCaret optional dependencies:
+2023-08-15 19:19:42,281:WARNING:E:\pycaret-mlops-master\pycaret-mlops-master\venv\lib\site-packages\trio\_core\_multierror.py:412: RuntimeWarning: IPython detected, but you already have a custom exception handler installed. I'll skip installing Trio's custom handler, but this means exception groups will not show full tracebacks.
+  warnings.warn(
+
+2023-08-15 19:30:24,381:INFO:PyCaret RegressionExperiment
+2023-08-15 19:30:24,396:INFO:Logging name: reg-default-name
+2023-08-15 19:30:24,396:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-08-15 19:30:24,396:INFO:version 3.0.4
+2023-08-15 19:30:24,396:INFO:Initializing setup()
+2023-08-15 19:30:24,396:INFO:self.USI: 259a
+2023-08-15 19:30:24,396:INFO:self._variable_keys: {'_available_plots', '_ml_usecase', 'exp_id', 'exp_name_log', 'target_param', 'fold_groups_param', 'n_jobs_param', 'pipeline', 'X_test', 'gpu_param', 'y_train', 'seed', 'X_train', 'log_plots_param', 'logging_param', 'fold_shuffle_param', 'gpu_n_jobs_param', 'memory', 'USI', 'fold_generator', 'idx', 'transform_target_param', 'y', 'X', 'data', 'y_test', 'html_param'}
+2023-08-15 19:30:24,396:INFO:Checking environment
+2023-08-15 19:30:24,396:INFO:python_version: 3.9.13
+2023-08-15 19:30:24,396:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-08-15 19:30:24,396:INFO:machine: AMD64
+2023-08-15 19:30:24,396:INFO:platform: Windows-10-10.0.19045-SP0
+2023-08-15 19:30:24,396:INFO:Memory: svmem(total=8476581888, available=1241804800, percent=85.4, used=7234777088, free=1241804800)
+2023-08-15 19:30:24,396:INFO:Physical Core: 2
+2023-08-15 19:30:24,396:INFO:Logical Core: 4
+2023-08-15 19:30:24,396:INFO:Checking libraries
+2023-08-15 19:30:24,396:INFO:System:
+2023-08-15 19:30:24,396:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-08-15 19:30:24,396:INFO:executable: E:\pycaret-mlops-master\pycaret-mlops-master\venv\Scripts\python.exe
+2023-08-15 19:30:24,396:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-08-15 19:30:24,396:INFO:PyCaret required dependencies:
+2023-08-15 19:30:24,412:INFO:                 pip: 22.3.1
+2023-08-15 19:30:24,412:INFO:          setuptools: 65.5.1
+2023-08-15 19:30:24,412:INFO:             pycaret: 3.0.4
+2023-08-15 19:30:24,412:INFO:             IPython: 7.34.0
+2023-08-15 19:30:24,412:INFO:          ipywidgets: 7.8.0
+2023-08-15 19:30:24,412:INFO:                tqdm: 4.66.1
+2023-08-15 19:30:24,412:INFO:               numpy: 1.23.5
+2023-08-15 19:30:24,412:INFO:              pandas: 1.5.3
+2023-08-15 19:30:24,412:INFO:              jinja2: 3.1.2
+2023-08-15 19:30:24,412:INFO:               scipy: 1.10.1
+2023-08-15 19:30:24,412:INFO:              joblib: 1.3.2
+2023-08-15 19:30:24,412:INFO:             sklearn: 1.2.2
+2023-08-15 19:30:24,412:INFO:                pyod: 1.1.0
+2023-08-15 19:30:24,412:INFO:            imblearn: 0.11.0
+2023-08-15 19:30:24,412:INFO:   category_encoders: 2.6.1
+2023-08-15 19:30:24,412:INFO:            lightgbm: 4.0.0
+2023-08-15 19:30:24,412:INFO:               numba: 0.57.1
+2023-08-15 19:30:24,412:INFO:            requests: 2.31.0
+2023-08-15 19:30:24,412:INFO:          matplotlib: 3.7.2
+2023-08-15 19:30:24,412:INFO:          scikitplot: 0.3.7
+2023-08-15 19:30:24,412:INFO:         yellowbrick: 1.5
+2023-08-15 19:30:24,412:INFO:              plotly: 5.16.0
+2023-08-15 19:30:24,412:INFO:    plotly-resampler: Not installed
+2023-08-15 19:30:24,412:INFO:             kaleido: 0.2.1
+2023-08-15 19:30:24,412:INFO:           schemdraw: 0.15
+2023-08-15 19:30:24,412:INFO:         statsmodels: 0.14.0
+2023-08-15 19:30:24,412:INFO:              sktime: 0.21.0
+2023-08-15 19:30:24,412:INFO:               tbats: 1.1.3
+2023-08-15 19:30:24,412:INFO:            pmdarima: 2.0.3
+2023-08-15 19:30:24,412:INFO:              psutil: 5.9.5
+2023-08-15 19:30:24,412:INFO:          markupsafe: 2.1.3
+2023-08-15 19:30:24,412:INFO:             pickle5: Not installed
+2023-08-15 19:30:24,412:INFO:         cloudpickle: 2.2.1
+2023-08-15 19:30:24,412:INFO:         deprecation: 2.1.0
+2023-08-15 19:30:24,412:INFO:              xxhash: 3.3.0
+2023-08-15 19:30:24,412:INFO:           wurlitzer: Not installed
+2023-08-15 19:30:24,412:INFO:PyCaret optional dependencies:
+2023-08-15 19:33:01,173:INFO:PyCaret RegressionExperiment
+2023-08-15 19:33:01,173:INFO:Logging name: reg-default-name
+2023-08-15 19:33:01,173:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-08-15 19:33:01,173:INFO:version 3.0.4
+2023-08-15 19:33:01,173:INFO:Initializing setup()
+2023-08-15 19:33:01,173:INFO:self.USI: 123e
+2023-08-15 19:33:01,173:INFO:self._variable_keys: {'_available_plots', '_ml_usecase', 'exp_id', 'exp_name_log', 'target_param', 'fold_groups_param', 'n_jobs_param', 'pipeline', 'X_test', 'gpu_param', 'y_train', 'seed', 'X_train', 'log_plots_param', 'logging_param', 'fold_shuffle_param', 'gpu_n_jobs_param', 'memory', 'USI', 'fold_generator', 'idx', 'transform_target_param', 'y', 'X', 'data', 'y_test', 'html_param'}
+2023-08-15 19:33:01,173:INFO:Checking environment
+2023-08-15 19:33:01,173:INFO:python_version: 3.9.13
+2023-08-15 19:33:01,173:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-08-15 19:33:01,173:INFO:machine: AMD64
+2023-08-15 19:33:01,173:INFO:platform: Windows-10-10.0.19045-SP0
+2023-08-15 19:33:01,189:INFO:Memory: svmem(total=8476581888, available=1150009344, percent=86.4, used=7326572544, free=1150009344)
+2023-08-15 19:33:01,189:INFO:Physical Core: 2
+2023-08-15 19:33:01,189:INFO:Logical Core: 4
+2023-08-15 19:33:01,189:INFO:Checking libraries
+2023-08-15 19:33:01,189:INFO:System:
+2023-08-15 19:33:01,189:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-08-15 19:33:01,189:INFO:executable: E:\pycaret-mlops-master\pycaret-mlops-master\venv\Scripts\python.exe
+2023-08-15 19:33:01,189:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-08-15 19:33:01,189:INFO:PyCaret required dependencies:
+2023-08-15 19:33:01,189:INFO:                 pip: 22.3.1
+2023-08-15 19:33:01,189:INFO:          setuptools: 65.5.1
+2023-08-15 19:33:01,189:INFO:             pycaret: 3.0.4
+2023-08-15 19:33:01,189:INFO:             IPython: 7.34.0
+2023-08-15 19:33:01,189:INFO:          ipywidgets: 7.8.0
+2023-08-15 19:33:01,189:INFO:                tqdm: 4.66.1
+2023-08-15 19:33:01,189:INFO:               numpy: 1.23.5
+2023-08-15 19:33:01,189:INFO:              pandas: 1.5.3
+2023-08-15 19:33:01,189:INFO:              jinja2: 3.1.2
+2023-08-15 19:33:01,189:INFO:               scipy: 1.10.1
+2023-08-15 19:33:01,189:INFO:              joblib: 1.3.2
+2023-08-15 19:33:01,189:INFO:             sklearn: 1.2.2
+2023-08-15 19:33:01,189:INFO:                pyod: 1.1.0
+2023-08-15 19:33:01,189:INFO:            imblearn: 0.11.0
+2023-08-15 19:33:01,189:INFO:   category_encoders: 2.6.1
+2023-08-15 19:33:01,189:INFO:            lightgbm: 4.0.0
+2023-08-15 19:33:01,189:INFO:               numba: 0.57.1
+2023-08-15 19:33:01,189:INFO:            requests: 2.31.0
+2023-08-15 19:33:01,189:INFO:          matplotlib: 3.7.2
+2023-08-15 19:33:01,189:INFO:          scikitplot: 0.3.7
+2023-08-15 19:33:01,189:INFO:         yellowbrick: 1.5
+2023-08-15 19:33:01,189:INFO:              plotly: 5.16.0
+2023-08-15 19:33:01,189:INFO:    plotly-resampler: Not installed
+2023-08-15 19:33:01,189:INFO:             kaleido: 0.2.1
+2023-08-15 19:33:01,189:INFO:           schemdraw: 0.15
+2023-08-15 19:33:01,189:INFO:         statsmodels: 0.14.0
+2023-08-15 19:33:01,189:INFO:              sktime: 0.21.0
+2023-08-15 19:33:01,189:INFO:               tbats: 1.1.3
+2023-08-15 19:33:01,189:INFO:            pmdarima: 2.0.3
+2023-08-15 19:33:01,189:INFO:              psutil: 5.9.5
+2023-08-15 19:33:01,189:INFO:          markupsafe: 2.1.3
+2023-08-15 19:33:01,189:INFO:             pickle5: Not installed
+2023-08-15 19:33:01,189:INFO:         cloudpickle: 2.2.1
+2023-08-15 19:33:01,189:INFO:         deprecation: 2.1.0
+2023-08-15 19:33:01,189:INFO:              xxhash: 3.3.0
+2023-08-15 19:33:01,189:INFO:           wurlitzer: Not installed
+2023-08-15 19:33:01,189:INFO:PyCaret optional dependencies:
+2023-08-15 19:33:28,003:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:33:28,003:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:33:28,003:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:33:28,003:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:33:31,935:INFO:PyCaret RegressionExperiment
+2023-08-15 19:33:31,935:INFO:Logging name: reg-default-name
+2023-08-15 19:33:31,935:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-08-15 19:33:31,935:INFO:version 3.0.4
+2023-08-15 19:33:31,935:INFO:Initializing setup()
+2023-08-15 19:33:31,935:INFO:self.USI: 5509
+2023-08-15 19:33:31,935:INFO:self._variable_keys: {'log_plots_param', 'USI', 'seed', '_ml_usecase', 'X', 'X_train', 'fold_groups_param', 'gpu_param', 'exp_name_log', 'data', 'memory', 'fold_generator', 'y', 'X_test', 'html_param', 'exp_id', '_available_plots', 'logging_param', 'gpu_n_jobs_param', 'y_train', 'n_jobs_param', 'fold_shuffle_param', 'pipeline', 'transform_target_param', 'target_param', 'idx', 'y_test'}
+2023-08-15 19:33:31,935:INFO:Checking environment
+2023-08-15 19:33:31,935:INFO:python_version: 3.9.13
+2023-08-15 19:33:31,935:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-08-15 19:33:31,935:INFO:machine: AMD64
+2023-08-15 19:33:31,935:INFO:platform: Windows-10-10.0.19045-SP0
+2023-08-15 19:33:31,935:INFO:Memory: svmem(total=8476581888, available=1012047872, percent=88.1, used=7464534016, free=1012047872)
+2023-08-15 19:33:31,935:INFO:Physical Core: 2
+2023-08-15 19:33:31,935:INFO:Logical Core: 4
+2023-08-15 19:33:31,935:INFO:Checking libraries
+2023-08-15 19:33:31,935:INFO:System:
+2023-08-15 19:33:31,935:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-08-15 19:33:31,935:INFO:executable: E:\pycaret-mlops-master\pycaret-mlops-master\venv\Scripts\python.exe
+2023-08-15 19:33:31,935:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-08-15 19:33:31,935:INFO:PyCaret required dependencies:
+2023-08-15 19:33:33,306:INFO:                 pip: 22.3.1
+2023-08-15 19:33:33,306:INFO:          setuptools: 65.5.1
+2023-08-15 19:33:33,306:INFO:             pycaret: 3.0.4
+2023-08-15 19:33:33,306:INFO:             IPython: 7.34.0
+2023-08-15 19:33:33,306:INFO:          ipywidgets: 7.8.0
+2023-08-15 19:33:33,306:INFO:                tqdm: 4.66.1
+2023-08-15 19:33:33,306:INFO:               numpy: 1.23.5
+2023-08-15 19:33:33,306:INFO:              pandas: 1.5.3
+2023-08-15 19:33:33,306:INFO:              jinja2: 3.1.2
+2023-08-15 19:33:33,306:INFO:               scipy: 1.10.1
+2023-08-15 19:33:33,306:INFO:              joblib: 1.3.2
+2023-08-15 19:33:33,306:INFO:             sklearn: 1.2.2
+2023-08-15 19:33:33,306:INFO:                pyod: 1.1.0
+2023-08-15 19:33:33,306:INFO:            imblearn: 0.11.0
+2023-08-15 19:33:33,306:INFO:   category_encoders: 2.6.1
+2023-08-15 19:33:33,306:INFO:            lightgbm: 4.0.0
+2023-08-15 19:33:33,306:INFO:               numba: 0.57.1
+2023-08-15 19:33:33,306:INFO:            requests: 2.31.0
+2023-08-15 19:33:33,306:INFO:          matplotlib: 3.7.2
+2023-08-15 19:33:33,306:INFO:          scikitplot: 0.3.7
+2023-08-15 19:33:33,306:INFO:         yellowbrick: 1.5
+2023-08-15 19:33:33,306:INFO:              plotly: 5.16.0
+2023-08-15 19:33:33,306:INFO:    plotly-resampler: Not installed
+2023-08-15 19:33:33,306:INFO:             kaleido: 0.2.1
+2023-08-15 19:33:33,306:INFO:           schemdraw: 0.15
+2023-08-15 19:33:33,306:INFO:         statsmodels: 0.14.0
+2023-08-15 19:33:33,306:INFO:              sktime: 0.21.0
+2023-08-15 19:33:33,306:INFO:               tbats: 1.1.3
+2023-08-15 19:33:33,306:INFO:            pmdarima: 2.0.3
+2023-08-15 19:33:33,306:INFO:              psutil: 5.9.5
+2023-08-15 19:33:33,306:INFO:          markupsafe: 2.1.3
+2023-08-15 19:33:33,306:INFO:             pickle5: Not installed
+2023-08-15 19:33:33,306:INFO:         cloudpickle: 2.2.1
+2023-08-15 19:33:33,306:INFO:         deprecation: 2.1.0
+2023-08-15 19:33:33,306:INFO:              xxhash: 3.3.0
+2023-08-15 19:33:33,306:INFO:           wurlitzer: Not installed
+2023-08-15 19:33:33,306:INFO:PyCaret optional dependencies:
+2023-08-15 19:33:33,571:WARNING:E:\pycaret-mlops-master\pycaret-mlops-master\venv\lib\site-packages\trio\_core\_multierror.py:412: RuntimeWarning:
+
+IPython detected, but you already have a custom exception handler installed. I'll skip installing Trio's custom handler, but this means exception groups will not show full tracebacks.
+
+
+2023-08-15 19:34:13,092:INFO:PyCaret RegressionExperiment
+2023-08-15 19:34:13,092:INFO:Logging name: reg-default-name
+2023-08-15 19:34:13,092:INFO:ML Usecase: MLUsecase.REGRESSION
+2023-08-15 19:34:13,092:INFO:version 3.0.4
+2023-08-15 19:34:13,092:INFO:Initializing setup()
+2023-08-15 19:34:13,092:INFO:self.USI: 67bb
+2023-08-15 19:34:13,092:INFO:self._variable_keys: {'log_plots_param', 'USI', 'seed', '_ml_usecase', 'X', 'X_train', 'fold_groups_param', 'gpu_param', 'exp_name_log', 'data', 'memory', 'fold_generator', 'y', 'X_test', 'html_param', 'exp_id', '_available_plots', 'logging_param', 'gpu_n_jobs_param', 'y_train', 'n_jobs_param', 'fold_shuffle_param', 'pipeline', 'transform_target_param', 'target_param', 'idx', 'y_test'}
+2023-08-15 19:34:13,092:INFO:Checking environment
+2023-08-15 19:34:13,092:INFO:python_version: 3.9.13
+2023-08-15 19:34:13,092:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-08-15 19:34:13,092:INFO:machine: AMD64
+2023-08-15 19:34:13,092:INFO:platform: Windows-10-10.0.19045-SP0
+2023-08-15 19:34:13,092:INFO:Memory: svmem(total=8476581888, available=872099840, percent=89.7, used=7604482048, free=872099840)
+2023-08-15 19:34:13,092:INFO:Physical Core: 2
+2023-08-15 19:34:13,092:INFO:Logical Core: 4
+2023-08-15 19:34:13,092:INFO:Checking libraries
+2023-08-15 19:34:13,092:INFO:System:
+2023-08-15 19:34:13,092:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-08-15 19:34:13,092:INFO:executable: E:\pycaret-mlops-master\pycaret-mlops-master\venv\Scripts\python.exe
+2023-08-15 19:34:13,092:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-08-15 19:34:13,092:INFO:PyCaret required dependencies:
+2023-08-15 19:34:13,092:INFO:                 pip: 22.3.1
+2023-08-15 19:34:13,092:INFO:          setuptools: 65.5.1
+2023-08-15 19:34:13,092:INFO:             pycaret: 3.0.4
+2023-08-15 19:34:13,092:INFO:             IPython: 7.34.0
+2023-08-15 19:34:13,092:INFO:          ipywidgets: 7.8.0
+2023-08-15 19:34:13,092:INFO:                tqdm: 4.66.1
+2023-08-15 19:34:13,092:INFO:               numpy: 1.23.5
+2023-08-15 19:34:13,092:INFO:              pandas: 1.5.3
+2023-08-15 19:34:13,092:INFO:              jinja2: 3.1.2
+2023-08-15 19:34:13,092:INFO:               scipy: 1.10.1
+2023-08-15 19:34:13,092:INFO:              joblib: 1.3.2
+2023-08-15 19:34:13,092:INFO:             sklearn: 1.2.2
+2023-08-15 19:34:13,092:INFO:                pyod: 1.1.0
+2023-08-15 19:34:13,092:INFO:            imblearn: 0.11.0
+2023-08-15 19:34:13,092:INFO:   category_encoders: 2.6.1
+2023-08-15 19:34:13,092:INFO:            lightgbm: 4.0.0
+2023-08-15 19:34:13,092:INFO:               numba: 0.57.1
+2023-08-15 19:34:13,092:INFO:            requests: 2.31.0
+2023-08-15 19:34:13,092:INFO:          matplotlib: 3.7.2
+2023-08-15 19:34:13,092:INFO:          scikitplot: 0.3.7
+2023-08-15 19:34:13,092:INFO:         yellowbrick: 1.5
+2023-08-15 19:34:13,092:INFO:              plotly: 5.16.0
+2023-08-15 19:34:13,092:INFO:    plotly-resampler: Not installed
+2023-08-15 19:34:13,092:INFO:             kaleido: 0.2.1
+2023-08-15 19:34:13,092:INFO:           schemdraw: 0.15
+2023-08-15 19:34:13,092:INFO:         statsmodels: 0.14.0
+2023-08-15 19:34:13,092:INFO:              sktime: 0.21.0
+2023-08-15 19:34:13,092:INFO:               tbats: 1.1.3
+2023-08-15 19:34:13,092:INFO:            pmdarima: 2.0.3
+2023-08-15 19:34:13,092:INFO:              psutil: 5.9.5
+2023-08-15 19:34:13,092:INFO:          markupsafe: 2.1.3
+2023-08-15 19:34:13,092:INFO:             pickle5: Not installed
+2023-08-15 19:34:13,092:INFO:         cloudpickle: 2.2.1
+2023-08-15 19:34:13,092:INFO:         deprecation: 2.1.0
+2023-08-15 19:34:13,092:INFO:              xxhash: 3.3.0
+2023-08-15 19:34:13,092:INFO:           wurlitzer: Not installed
+2023-08-15 19:34:13,092:INFO:PyCaret optional dependencies:
+2023-08-15 19:42:33,366:INFO:PyCaret ClassificationExperiment
+2023-08-15 19:42:33,366:INFO:Logging name: clf-default-name
+2023-08-15 19:42:33,366:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-08-15 19:42:33,366:INFO:version 3.0.4
+2023-08-15 19:42:33,381:INFO:Initializing setup()
+2023-08-15 19:42:33,381:INFO:self.USI: 39af
+2023-08-15 19:42:33,381:INFO:self._variable_keys: {'X_train', 'logging_param', 'memory', 'target_param', 'y_train', 'exp_name_log', 'fold_groups_param', 'html_param', 'n_jobs_param', 'y', 'gpu_param', 'seed', 'X_test', 'X', 'pipeline', 'idx', 'y_test', 'fix_imbalance', 'log_plots_param', 'exp_id', 'fold_generator', 'is_multiclass', '_available_plots', 'gpu_n_jobs_param', 'USI', '_ml_usecase', 'data', 'fold_shuffle_param'}
+2023-08-15 19:42:33,381:INFO:Checking environment
+2023-08-15 19:42:33,381:INFO:python_version: 3.9.13
+2023-08-15 19:42:33,381:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-08-15 19:42:33,381:INFO:machine: AMD64
+2023-08-15 19:42:33,381:INFO:platform: Windows-10-10.0.19045-SP0
+2023-08-15 19:42:33,381:INFO:Memory: svmem(total=8476581888, available=1055571968, percent=87.5, used=7421009920, free=1055571968)
+2023-08-15 19:42:33,381:INFO:Physical Core: 2
+2023-08-15 19:42:33,381:INFO:Logical Core: 4
+2023-08-15 19:42:33,381:INFO:Checking libraries
+2023-08-15 19:42:33,381:INFO:System:
+2023-08-15 19:42:33,381:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-08-15 19:42:33,381:INFO:executable: E:\pycaret-mlops-master\pycaret-mlops-master\venv\Scripts\python.exe
+2023-08-15 19:42:33,381:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-08-15 19:42:33,381:INFO:PyCaret required dependencies:
+2023-08-15 19:42:33,381:INFO:                 pip: 22.3.1
+2023-08-15 19:42:33,381:INFO:          setuptools: 65.5.1
+2023-08-15 19:42:33,381:INFO:             pycaret: 3.0.4
+2023-08-15 19:42:33,381:INFO:             IPython: 7.34.0
+2023-08-15 19:42:33,381:INFO:          ipywidgets: 7.8.0
+2023-08-15 19:42:33,381:INFO:                tqdm: 4.66.1
+2023-08-15 19:42:33,381:INFO:               numpy: 1.23.5
+2023-08-15 19:42:33,381:INFO:              pandas: 1.5.3
+2023-08-15 19:42:33,381:INFO:              jinja2: 3.1.2
+2023-08-15 19:42:33,381:INFO:               scipy: 1.10.1
+2023-08-15 19:42:33,381:INFO:              joblib: 1.3.2
+2023-08-15 19:42:33,381:INFO:             sklearn: 1.2.2
+2023-08-15 19:42:33,381:INFO:                pyod: 1.1.0
+2023-08-15 19:42:33,381:INFO:            imblearn: 0.11.0
+2023-08-15 19:42:33,381:INFO:   category_encoders: 2.6.1
+2023-08-15 19:42:33,381:INFO:            lightgbm: 4.0.0
+2023-08-15 19:42:33,381:INFO:               numba: 0.57.1
+2023-08-15 19:42:33,381:INFO:            requests: 2.31.0
+2023-08-15 19:42:33,381:INFO:          matplotlib: 3.7.2
+2023-08-15 19:42:33,381:INFO:          scikitplot: 0.3.7
+2023-08-15 19:42:33,381:INFO:         yellowbrick: 1.5
+2023-08-15 19:42:33,381:INFO:              plotly: 5.16.0
+2023-08-15 19:42:33,381:INFO:    plotly-resampler: Not installed
+2023-08-15 19:42:33,381:INFO:             kaleido: 0.2.1
+2023-08-15 19:42:33,381:INFO:           schemdraw: 0.15
+2023-08-15 19:42:33,381:INFO:         statsmodels: 0.14.0
+2023-08-15 19:42:33,381:INFO:              sktime: 0.21.0
+2023-08-15 19:42:33,381:INFO:               tbats: 1.1.3
+2023-08-15 19:42:33,381:INFO:            pmdarima: 2.0.3
+2023-08-15 19:42:33,381:INFO:              psutil: 5.9.5
+2023-08-15 19:42:33,381:INFO:          markupsafe: 2.1.3
+2023-08-15 19:42:33,381:INFO:             pickle5: Not installed
+2023-08-15 19:42:33,381:INFO:         cloudpickle: 2.2.1
+2023-08-15 19:42:33,381:INFO:         deprecation: 2.1.0
+2023-08-15 19:42:33,381:INFO:              xxhash: 3.3.0
+2023-08-15 19:42:33,381:INFO:           wurlitzer: Not installed
+2023-08-15 19:42:33,381:INFO:PyCaret optional dependencies:
+2023-08-15 19:44:54,115:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:44:54,115:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:44:54,115:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:44:54,115:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-08-15 19:44:55,299:INFO:PyCaret ClassificationExperiment
+2023-08-15 19:44:55,299:INFO:Logging name: clf-default-name
+2023-08-15 19:44:55,299:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2023-08-15 19:44:55,299:INFO:version 3.0.4
+2023-08-15 19:44:55,299:INFO:Initializing setup()
+2023-08-15 19:44:55,299:INFO:self.USI: ec1f
+2023-08-15 19:44:55,299:INFO:self._variable_keys: {'html_param', 'gpu_n_jobs_param', '_available_plots', 'log_plots_param', 'target_param', 'fold_groups_param', 'idx', 'X_test', 'seed', 'exp_id', 'X_train', 'gpu_param', 'y_train', 'fix_imbalance', 'exp_name_log', 'fold_shuffle_param', 'y', 'fold_generator', 'X', '_ml_usecase', 'pipeline', 'logging_param', 'is_multiclass', 'memory', 'n_jobs_param', 'y_test', 'data', 'USI'}
+2023-08-15 19:44:55,299:INFO:Checking environment
+2023-08-15 19:44:55,299:INFO:python_version: 3.9.13
+2023-08-15 19:44:55,299:INFO:python_build: ('tags/v3.9.13:6de2ca5', 'May 17 2022 16:36:42')
+2023-08-15 19:44:55,299:INFO:machine: AMD64
+2023-08-15 19:44:55,299:INFO:platform: Windows-10-10.0.19045-SP0
+2023-08-15 19:44:55,299:INFO:Memory: svmem(total=8476581888, available=1214377984, percent=85.7, used=7262203904, free=1214377984)
+2023-08-15 19:44:55,299:INFO:Physical Core: 2
+2023-08-15 19:44:55,299:INFO:Logical Core: 4
+2023-08-15 19:44:55,299:INFO:Checking libraries
+2023-08-15 19:44:55,299:INFO:System:
+2023-08-15 19:44:55,299:INFO:    python: 3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2023-08-15 19:44:55,299:INFO:executable: E:\pycaret-mlops-master\pycaret-mlops-master\venv\Scripts\python.exe
+2023-08-15 19:44:55,299:INFO:   machine: Windows-10-10.0.19045-SP0
+2023-08-15 19:44:55,299:INFO:PyCaret required dependencies:
+2023-08-15 19:44:56,179:INFO:                 pip: 22.3.1
+2023-08-15 19:44:56,179:INFO:          setuptools: 65.5.1
+2023-08-15 19:44:56,179:INFO:             pycaret: 3.0.4
+2023-08-15 19:44:56,179:INFO:             IPython: 7.34.0
+2023-08-15 19:44:56,179:INFO:          ipywidgets: 7.8.0
+2023-08-15 19:44:56,179:INFO:                tqdm: 4.66.1
+2023-08-15 19:44:56,179:INFO:               numpy: 1.23.5
+2023-08-15 19:44:56,179:INFO:              pandas: 1.5.3
+2023-08-15 19:44:56,179:INFO:              jinja2: 3.1.2
+2023-08-15 19:44:56,179:INFO:               scipy: 1.10.1
+2023-08-15 19:44:56,179:INFO:              joblib: 1.3.2
+2023-08-15 19:44:56,179:INFO:             sklearn: 1.2.2
+2023-08-15 19:44:56,179:INFO:                pyod: 1.1.0
+2023-08-15 19:44:56,179:INFO:            imblearn: 0.11.0
+2023-08-15 19:44:56,179:INFO:   category_encoders: 2.6.1
+2023-08-15 19:44:56,179:INFO:            lightgbm: 4.0.0
+2023-08-15 19:44:56,179:INFO:               numba: 0.57.1
+2023-08-15 19:44:56,179:INFO:            requests: 2.31.0
+2023-08-15 19:44:56,179:INFO:          matplotlib: 3.7.2
+2023-08-15 19:44:56,179:INFO:          scikitplot: 0.3.7
+2023-08-15 19:44:56,179:INFO:         yellowbrick: 1.5
+2023-08-15 19:44:56,179:INFO:              plotly: 5.16.0
+2023-08-15 19:44:56,179:INFO:    plotly-resampler: Not installed
+2023-08-15 19:44:56,179:INFO:             kaleido: 0.2.1
+2023-08-15 19:44:56,179:INFO:           schemdraw: 0.15
+2023-08-15 19:44:56,179:INFO:         statsmodels: 0.14.0
+2023-08-15 19:44:56,179:INFO:              sktime: 0.21.0
+2023-08-15 19:44:56,179:INFO:               tbats: 1.1.3
+2023-08-15 19:44:56,179:INFO:            pmdarima: 2.0.3
+2023-08-15 19:44:56,179:INFO:              psutil: 5.9.5
+2023-08-15 19:44:56,179:INFO:          markupsafe: 2.1.3
+2023-08-15 19:44:56,179:INFO:             pickle5: Not installed
+2023-08-15 19:44:56,179:INFO:         cloudpickle: 2.2.1
+2023-08-15 19:44:56,179:INFO:         deprecation: 2.1.0
+2023-08-15 19:44:56,179:INFO:              xxhash: 3.3.0
+2023-08-15 19:44:56,179:INFO:           wurlitzer: Not installed
+2023-08-15 19:44:56,179:INFO:PyCaret optional dependencies:
+2023-08-15 19:44:56,404:WARNING:E:\pycaret-mlops-master\pycaret-mlops-master\venv\lib\site-packages\trio\_core\_multierror.py:412: RuntimeWarning: IPython detected, but you already have a custom exception handler installed. I'll skip installing Trio's custom handler, but this means exception groups will not show full tracebacks.
+  warnings.warn(
+

@@ -1,0 +1,4 @@
+bodywork
+pycaret[full]
+fastapi
+uvicorn
